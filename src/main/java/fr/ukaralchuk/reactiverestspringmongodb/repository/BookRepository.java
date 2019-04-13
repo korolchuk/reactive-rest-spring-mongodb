@@ -9,5 +9,5 @@ import reactor.core.publisher.Mono;
 @Repository
 public interface BookRepository extends ReactiveMongoRepository<Book, String> {
     Mono<Book> findBookByTitle(String title);
-    Flux<Book> findBooksByAuthor(String author);
+    Flux<Book> findBooksByAuthor (String author);
 }

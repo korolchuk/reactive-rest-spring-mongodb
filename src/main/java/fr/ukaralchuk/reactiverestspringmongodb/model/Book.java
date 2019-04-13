@@ -6,9 +6,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.constraints.NotBlank;
 
-import java.util.Date;
 
-@Document(collection = "books")
+@Document(collection = "book")
 @Data
 public class Book {
     @Id
@@ -21,6 +20,7 @@ public class Book {
     private String author;
 
     @NotBlank
-    private Date createdBook = new Date();
+    private String yearPublication;
+
 
 }
